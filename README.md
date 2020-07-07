@@ -6,8 +6,18 @@ This pipeline is based on the work presented in:
 Mezzavilla M, Cocca M, Guidolin F, Gasparini P. A population-based approach for gene prioritization in understanding complex traits. Hum Genet. 2020;139(5):647-655. doi:10.1007/s00439-020-02152-4
 
 ---
+##Requirements
 
-Pipeline steps:
++ Python <= 3.6
++ snakemake
++ bedtools
++ vcftools
++ bcftools
++ ...
+
+---
+
+##Pipeline steps:
 
 1. Provide genomic region input
 	* Get gene info from GENCODE data (if requested)
@@ -29,3 +39,13 @@ Pipeline steps:
 
 4. Calculate singleton scores
 	+ This step will be performed only in case of genomic region pipeline
+
+---
+##Input files
+
++ Multisample vcf files for the study population
++ ...
+
+---
+##Sample command
+
